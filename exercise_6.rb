@@ -9,7 +9,7 @@ def find_max_number(arr)
       max = value
     end
   end
-  return max
+  max
 end
 
 puts find_max_number(num)
