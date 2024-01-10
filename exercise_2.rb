@@ -1,16 +1,11 @@
 # Implement a function that checks if a string is a palindrome.
-
-
 def palindrome(word)
   if word.length == 0 || word.length == 1
-    true
-
+    print "This is a palindrome"
+  elsif word[0] == word[-1]
+    palindrome(word[1..-2])
   else
-    if word[0] == word[-1]
-      palindrome(word[1..-2])
-    else
-      puts "This is not a palindrome"
-    end
+    print "This is not a palindrome"
   end
 end
 
