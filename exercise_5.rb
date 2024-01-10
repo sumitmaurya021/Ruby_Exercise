@@ -2,17 +2,16 @@
 
 
 def remove_duplicate_char(words)
-    name = words.chars
-    output = []
-
-    name.each do |word|
+  name = words.chars
+  output = []
+  name.each do |word|
     if !output.include?(word)
-        output << word
+      output << word
     else
       next
     end
   end
-    output.join("")
+  output.join("")
 end
 
 print "Enter Your Words : "
