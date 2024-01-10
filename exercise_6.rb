@@ -3,8 +3,7 @@
 num = [10,20,40,100]
 def find_max_number(arr)
   max = arr[0]
-
-  for value in arr
+  arr.each do |value|
     if value > max
       max = value
     end
